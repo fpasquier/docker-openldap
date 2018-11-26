@@ -374,6 +374,17 @@ attributetype (
 #        SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 SINGLE-VALUE )
 
 #
+# Authentication authority attribute 1.3.6.1.4.1.63.1000.1.1.2.16.1
+#
+attributetype (
+	1.3.6.1.4.1.63.1000.1.1.2.16.1
+	NAME 'authAuthority'
+	DESC 'password server authentication authority'
+	EQUALITY caseExactIA5Match
+	SUBSTR caseExactIA5SubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+
+#
 # User object class.
 #
 objectclass (
@@ -1140,17 +1151,6 @@ objectclass (
 	      jpegPhoto $
 	      apple-relationships $ apple-phonecontacts $ apple-emailcontacts $ apple-postaladdresses $ apple-mapcoordinates $
 	      apple-serviceslocator ) )
-
-#
-# Authentication authority attribute 1.3.6.1.4.1.63.1000.1.1.2.16.1
-#
-attributetype (
-	1.3.6.1.4.1.63.1000.1.1.2.16.1
-	NAME 'authAuthority'
-	DESC 'password server authentication authority'
-	EQUALITY caseExactIA5Match
-	SUBSTR caseExactIA5SubstringsMatch
-	SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
 
 #attributetype (
 #	1.3.6.1.4.1.63.1000.1.1.2.16.2
