@@ -145,7 +145,7 @@ attributetype ( 1.3.6.1.4.1.6574.5.2.1.24
 	SINGLE-VALUE )
 
 attributetype ( 1.3.6.1.4.1.6574.5.2.1.25
-	NAME 'SynoExcludeCommonPwd'
+	NAME 'pwdSynoExcludeCommonPwd'
 	EQUALITY booleanMatch
 	SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
 	SINGLE-VALUE )
