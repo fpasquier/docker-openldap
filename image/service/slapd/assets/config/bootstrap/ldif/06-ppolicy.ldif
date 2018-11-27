@@ -2,7 +2,3 @@ dn: cn=module{0},cn=config
 changetype: modify
 add: olcModuleLoad
 olcModuleLoad: ppolicy
-
-dn: olcOverlay=ppolicy,olcDatabase={2}mdb,cn=config
-objectClass: olcPPolicyConfig
-olcOverlay: ppolicy
