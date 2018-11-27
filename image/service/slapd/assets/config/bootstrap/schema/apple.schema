@@ -383,6 +383,14 @@ attributetype (
 	EQUALITY caseExactIA5Match
 	SUBSTR caseExactIA5SubstringsMatch
 	SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+	
+##
+## Account flags in string format ([UWDX     ])
+##
+attributetype ( 1.3.6.1.4.1.7165.2.1.26 NAME 'sambaAcctFlags'
+        DESC 'Account Flags'
+        EQUALITY caseIgnoreIA5Match
+SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{16} SINGLE-VALUE )	
 
 #
 # User object class.
